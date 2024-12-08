@@ -1,0 +1,43 @@
+algorithme word_verifier
+
+var len, word_count, voyelles_count, i, j: int
+var voyelles_words ,para: str
+
+debut
+len = 0
+word_count = 0
+voyelles_count = 0
+voyelles_word ="aeiouAEIOU"
+read(para)
+for i in range(len(para)):
+	len=len+1
+	for j in range(len(voyelles_word)):
+		if para[i]==voyelles_word[j]:
+			voyelles_count=voyelles_count+1
+		end if
+	end for
+	if para[i]== " " and i > 0 and para[i-1] != " ":
+		word_count=word_count+1
+	end if
+end for
+print("Length of the sentence:", len)
+print("Number of words:", word_count)
+print("Number of voyelles:", voyelles_count)
+
+
+
+
+
+
+
+	if (para[i]==" " or para[i]==".") and (space==True) and (i>0)
+		wcount=wcount+1
+		sapce=False
+	else
+		space=True
+	end if
+	sapce=False
+
+
+
+  hello   word im the best   valorant player.
